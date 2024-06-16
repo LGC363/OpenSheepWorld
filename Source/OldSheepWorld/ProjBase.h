@@ -53,6 +53,8 @@ protected:
 
 	// 'virtual' so we can override this in child-classes
 	 
+	UPROPERTY(EditAnywhere, Category = "ProjSet")
+	bool IsExplodeWhenHit=true;
 	 
 	UFUNCTION()
 	virtual void OnActorHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
